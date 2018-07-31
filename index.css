@@ -230,3 +230,6 @@ li:nth-child(even){
 .test{
     background: #4d4d4d;
 }
+.testOne{
+    display: none;
+}
