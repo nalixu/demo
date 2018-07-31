@@ -7,19 +7,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./font/iconfont.css">
+
 </head>
 <body>
-    <div class="head">
-        <i class="iconfont">&#xe62d;</i>
-        <input type="text" class="input_content" onkeydown="getValue()" placeholder="What needs to be done?" />
+<div class="container">
+    <div class="headAndBtn">
+            <div class="head_input">
+                    <div class="head">
+                            <i class="iconfont">&#xe62d;</i>
+                            <input type="text" class="input_content" onkeydown="getValue()" placeholder="What needs to be done?" />
+                        </div>
+            </div>
+            
+            <div class="sortbtn">
+                    <input class="add" id="add" type="button" value="升序" onclick="filterData(1)"/>
+                    <input class="des" id="des" type="button" value="倒序" onclick="filterData(0)" />
+            </div>
     </div>
-   
+    
     <div class="main" id="listContainer">
-        <div>
-                <input class="add" id="add" type="button" value="升序" onclick="filterData(1)"/>
-                <input class="des" id="des" type="button" value="倒序" onclick="filterData(0)" />
-        </div>
-        
         <ul id="list"></ul>
     </div>
     <div id="maskBody">
@@ -34,7 +40,14 @@
                      </div>
                 </div>
     </div>
-   
+</div>
+
+<!-- test about flex -->
+<!-- <div class="container"> 
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</div> -->
     <script src="./sortThird.js"></script>
 </body>
 </html>

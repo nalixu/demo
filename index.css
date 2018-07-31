@@ -8,6 +8,48 @@ ul,li{
 .clear{
     clear: both;
 }
+body{
+    display: flex;
+    justify-content: center;
+}
+/* text about flex */
+/* .container{
+    width: 232px;
+    height: auto;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+.one{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+.two{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+.three{
+    width: 100px;
+    height: 383px;
+    border: 1px solid red;
+} */
+.container{
+    width: 420px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.headAndBtn{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.head_input{
+    /* width: 25%; */
+}
 .head{
     width: 341px;
     height: 43px;
@@ -104,31 +146,42 @@ ul,li{
     display: block;
     margin: auto;
 }
+.main ul{
+    /* width: 350px; */
+    display: flex;
+    flex: initial;
+    flex-direction: column;
+}
 .main ul li{
     width: 350px;
     height: 40px;
     padding: 0 0 0 20px;
     list-style-type: none;
-    margin: auto;
-    display: block;
+    /* margin-left: 728px; */
+    /* margin: auto; */
+    /* display: block; */
     border: 1px solid rgba(0, 0, 0, 0.03);
+}
+.sortbtn{
+    display: inline-flex;
+    margin-top: 2rem;
 }
 .add{
     width: 45px;
     height: 30px;
-    float: right;
+    /* float: right;
     position: absolute;
     left: 948px;
-    top: 39px;
+    top: 39px; */
     background: rgba(0, 0, 0, 0.003);
 }
 .des{
     width: 45px;
     height: 30px;
-    float: right;
+    /* float: right;
     position: absolute;
     top: 39px;
-    left: 896px;
+    left: 896px; */
     background: rgba(0, 0, 0, 0.003);
 }
 /* #mask{
@@ -226,11 +279,4 @@ ul,li{
 }
 li:nth-child(even){
     background: #eee;
-}
-.test{
-    background: #4d4d4d;
-}
-.testOne{
-    display: none;
-    position: relative;
 }
