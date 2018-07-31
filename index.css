@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style-type: none;
+}
+.clear{
+    clear: both;
+}
+.head{
+    width: 341px;
+    height: 43px;
+    padding: 16px 16px 16px 16px;
+    border: none;
+    background: rgba(0, 0, 0, 0.003);
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+    display: block;
+    margin: auto;
+}
+
+.input_content{
+    position:  relative;
+    width: 300px;
+    height: 35px;
+    border: 0;
+    border-width: 0;
+    outline: 0;
+    padding: 15px 0 0 12px;
+    line-height: 8px;
+    font-size: 20px;
+    color: #4d4d4d;
+    font-weight: 300;
+}
+.delete{
+    text-decoration: line-through;
+    display: block;
+    position: relative;
+    width: 373px;
+    height: 43px;
+    line-height: 40px;
+    margin: auto;
+}
+
+.main-li{
+    width: 373px;
+    height: 43px;
+    line-height: 40px;
+    margin: auto;
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+    position: relative;
+}
+.main-li label{
+    width: 20px;
+    height: 20px;
+    float: left;
+    display: inline-block;
+    position: absolute;
+    border: 1px solid;
+    border-radius: 50%;
+    top: 11px;
+    left: 11px;
+}
+.main-li span{
+    margin: 0 14px;
+}
+.main-li input{
+    display: none;
+
+}
+.main-li .chksp{
+    visibility: hidden;
+}
+.delete input{
+    display: none;
+}
+.delete span{
+    /* position: absolute;
+    left: 20px; */
+}
+.delete label{
+    width: 20px;
+    height: 20px;
+    float: left;
+    border: 1px solid;
+    border-radius: 50%;
+    visibility: hidden;
+}
+.delete label:after{
+  
+}
+.delete .chksp {
+    visibility: visible;
+    display: inline-block;
+    margin-right: 10px;
+}
+.li_item1{
+    width: 300px;
+    float: left;
+}
+.li_item{
+    width: 300px;
+    /* float: left; */
+    display: block;
+    margin: auto;
+}
+.main ul li{
+    width: 350px;
+    height: 40px;
+    padding: 0 0 0 20px;
+    list-style-type: none;
+    margin: auto;
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+.add{
+    width: 45px;
+    height: 30px;
+    float: right;
+    position: absolute;
+    left: 948px;
+    top: 39px;
+    background: rgba(0, 0, 0, 0.003);
+}
+.des{
+    width: 45px;
+    height: 30px;
+    float: right;
+    position: absolute;
+    top: 39px;
+    left: 896px;
+    background: rgba(0, 0, 0, 0.003);
+}
+/* #mask{
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.03);
+    display: none
+}
+#alertBox{
+    position: absolute;
+    z-index: 1000;
+    width: 350px;
+    height: 250px;
+    border: 1px solid #ccc;
+    background: #fff;
+    display: none;
+} */
+#mask{
+
+    /* display: none; */
+    
+}
+#alertBox{
+    width: 350px;
+    height: 250px;
+    border: 1px solid #ccc;
+    background: #fff;
+    display: flex;
+    flex: initial;
+    justify-content: center;
+    z-index: 1000;
+    align-items: center;
+    flex-direction: column;
+    /* display: none; */
+ 
+}
+#maskBody{
+   position: absolute;
+   top: 0;
+}
+.btnGroup{
+    width: 80%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+/* .show{
+    display: block;
+} */
+
+/* show mark  */
+.show_mask{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex: auto;
+    top: 0;
+    z-index: 99;
+    justify-content: center;
+    align-self: flex-start;
+    flex-direction: column;
+    align-items: center;
+    /* display: block; */
+}
+.show_mark .alertBox{
+    width: 350px;
+    height: 250px;
+    border: 1px solid #ccc;
+    background: #fff;
+    display: flex;
+    flex: initial;
+    justify-content: center;
+    z-index: 1000;
+    align-items: center;
+    flex-direction: column;
+    display: block;
+}
+
+/* hidden mark */
+.hidden_mark {
+    display: none;
+}
+li:nth-child(even){
+    background: #eee;
+}
