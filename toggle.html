@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./toggle.css">
+    <title>drop-down</title>
+</head>
+<body>
+    <!-- 显示的内容：表单输入框以及列表 -->
+    <div class="container">
+        <div class="headAndBtn">
+            <div class="head">
+                <input type="text" class="input_content" onkeydown="getValue()" placeholder="What needs to be done?" />
+
+            </div>
+            <div class="sortbtn">
+                <input type="button" class="add" value="升序" onclick="filterData(1)" />
+                <input type="button" class="des" value="倒序" onclick="filterData(0)" />
+            </div>
+        </div>
+        <label for="toggle">
+            <span></span>
+        </label>
+        <input type="checkbox" id="toggle" style="display: none;" />
+        <div class="main" id="listContainer">
+            <ul id="list"></ul>
+        </div>
+    </div>
+    <!-- 弹出框 -->
+    <div id="maskBody">
+        <div id="mask" class="hidden_mask">
+            <div id="alertBox" class="alertBox">
+                <div class="text_confirm">
+                    <input type="text" class="text" value="确定删除？" disabled="disabled" name="" />
+                </div>
+                <div class="btnGroup">
+                    <input type="button" id="btn1Confirm" class="btn1" value="确定" />
+                    <input type="button" id="btn2Cancel" class="btn2" value="取消" name="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./toggle.js"></script>
+</body>
+</html>
